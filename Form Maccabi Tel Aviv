@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maccabi Tel Aviv</title>
+
+    <!-- logo of maccabi-tel-aviv -->
+    <img  src="C:\Users\avima\Desktop\מערכות מידע\שנה ב\סמסטר א\תקשורת מחשבים\Visual Studio Code\Matala_2_305309940_314720160\Maccabi_Tel_Aviv.png" style="width:30%; height:40%; position: absolute; top:35%; left:40%;"/> 
+    
+    <!-- Java Script Router -->
+    <script type="text/javascript" src="C:\Users\avima\Desktop\מערכות מידע\שנה ב\סמסטר א\תקשורת מחשבים\Visual Studio Code\Matala_2_305309940_314720160\javaScript.js"> </script>
+</head>
+<body>
+    <form action="https://formspree.io/f/moqpkgzq" method="POST">
+        <br>
+
+        <!-- A fixed order number that cannot be changed -->
+        <label>
+        Order Number:<br>
+        </label>
+        <input type="text" name="orderNumber" placeholder="Name Id" size="30" value="29760734" disabled>
+        <br><br>
+
+        <!-- A place to enter a first name -->
+        <label>
+        First Name:<br>
+        </label>
+        <input type="text" name="FirstName" size="30" maxlength="20" wirte>
+        <br><br>
+
+        <!-- A place to enter a last name -->
+        <label>
+        Last Name:<br>
+        </label>
+        <input type="text" name="LastName" size="30" maxlength="20" wirte>
+        <br><br>
+
+        <!-- A place to choose a clothing -->
+        <label for="Typeofclothing">Type of clothing:</label><br>
+        <input type="radio" id="Typeofclothing" name="clothing" value="10" checked="checked" onclick="test(10)">
+        <label for="clothing" >Shirt- 10 שח</label><br>
+        <input type="radio" id="Typeofclothing" name="clothing" value="10" onclick="test(10)">
+        <label for="clothing">Undershirt- 10 שח</label><br>
+        <input type="radio" id="Typeofclothing" name="clothing" value="20" onclick="test(20)">
+        <label for="clothing">Sweater- 20 שח</label><br>
+        <input type="radio" id="Typeofclothing" name="clothing" value="30" onclick="test(30)">
+        <label for="clothing">Hoodie- 30 שח</label><br>
+        <input type="radio" id="Typeofclothing" name="clothing" value="50" onclick="test(50)">
+        <label for="clothing">Coat- 50 שח</label><br>
+        <br><br>
+
+        <!-- A place to choose a Color -->
+        <label for="Color">Color:</label><br>
+        <select id="Color" name="Color">
+        <option value="Red">Red</option>
+        <option value="5" onclick="test(5)">Green- +5 שח</option>
+        <option value="-2" onclick="test(-1)">Blue- -2 שח</option>
+        <option value="white" selected >white</option>
+        </select>
+        <br><br>
+
+        <!-- A place to choose a size -->
+        <label for="Size">Size:</label><br>
+        <input type="radio" id="Size" name="Size" value="-0.1"  onclick="test('sale')">
+        <label for="Size">S- 10% הנחה</label><br>
+        <input type="radio" id="Size" name="Size" value="clothing">
+        <label for="Size">M</label><br>
+        <input type="radio" id="Size" name="Size" value="clothing">
+        <label for="Size">L</label><br>
+        <input type="radio" id="Size" name="Size" value="-0.1" onclick="test('sale')">
+        <label for="Size">XL- 10% הנחה</label><br>
+        <br><br>
+
+        <!-- A place to choose a Group logo -->
+        <label >Group logo:</label><br>
+        <label name="price"> 3 שח</label><br>
+        <input type="checkbox" value="3"  onclick="test(3)">
+        <label for="Backwards">Backwards</label><br>
+        <input type="checkbox"  value=" 3" onclick="test(3)">
+        <label for=" Forward ">Forward</label><br>
+        <input type="checkbox"  value="3" onclick="test(3)">
+        <label for="RightSleeve">Right sleeve</label><br>
+        <input type="checkbox" value=" 3" onclick="test(3)">
+        <label for=" LeftSleeve ">Left sleeve</label>
+        <br><br>
+
+        <!-- A place to enter a Address -->
+        <label>Address:<br>
+        <textarea name="address" size="10" maxlength="30"></textarea>
+        </label>
+        <br><br>
+
+        <!-- Calculate Quantity -->
+        <label>Quantity:<br>
+        <textarea name="Quantity" size="10" maxlength="30" >1</textarea>
+        </label>
+        <br><br>
+        
+        <!-- Button to send an order -->
+        <input type="submit" value="שלח הזמנה">
+
+        <!-- Button to start over -->
+        <input type="reset" value="התחל מההתחלה"onclick="test('restart')">
+
+         <!-- Button to Calculate price -->
+         <input type="button" id="Calculate" value="חשב" onclick="test('print')">
+        
+         <!-- Display the calculate -->
+         <input type="text" size="30" name="display" id="display"/>
+         
+        
+    </form>
+</body>
+</html>
